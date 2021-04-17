@@ -93,7 +93,7 @@ services: サービスの指定/対応サービス(asterisk afp cisco cisco-enab
 ```
 実行例：
 ```console
-$hydra -C [target(ip/hostname)] ssh
+$hydra -C [USERPASS_FILE] [target(ip/hostname)] ssh
 ```
 ## John the Ripper
 ## HashCat
