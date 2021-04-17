@@ -1,5 +1,6 @@
 # high-frequency-tips
 頻繁に使うコマンドのCheatSheet
+(short link → bit.ly/spxntips)
 
 ## Netcat
 オプション：
