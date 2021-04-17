@@ -36,7 +36,7 @@ $nc -l -p [port] 0<backpipe | nc -l -p [port] | tee backpipe
 -vv：デバッグのより詳細な出力
 -vvv："-vv"より更に詳細な出力
 ```
-実行例(ーゲットのユーザに対してSSHで接続)
+実行例(ターゲットのユーザに対してSSHで接続)
 ```console
 $ssh user@[target(ip/hostname)]
 ```
