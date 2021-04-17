@@ -1,4 +1,4 @@
-# high-frequency-tips
+# high-frequency-tips(spxntips)
 頻繁に使うコマンドのCheatSheet
 (short link → bit.ly/spxntips)
 
