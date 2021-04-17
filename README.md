@@ -41,7 +41,7 @@ $nc -l -p [port] 0<backpipe | nc -l -p [port] | tee backpipe
 ```console
 $ssh user@[target(ip/hostname)]
 ```
-### SCP(SSH File Transfer)
+### SCP(Secure Copy Protocol:SSH)
 オプション：
 ```
 -P：ポート指定
