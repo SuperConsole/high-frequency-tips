@@ -6,7 +6,11 @@
 ## John the Ripper
 ## HashCat
 ## Metasploit Framework
+ ### Meterpreter
+ ### msfvenom
+ ### Pivot
 ## Network
-### Routing
-### ICMP
-### ARP
+ ### Routing
+ ### ICMP
+ ### ARP
+## Google Dork
