@@ -50,7 +50,7 @@ $ssh user@[target(ip/hostname)]
 *.txt：ワイルドカード
 /home/user/{file1,file2,file3}：ファイルの複数選択 
 ```
-実行例(モートホストからローカルにコピーする)：
+実行例(リモートホストからローカルにコピーする)：
 ```console
 $scp user@[target(ip/hostname)]:[remote_filepath] [local_filepath]
 ```
